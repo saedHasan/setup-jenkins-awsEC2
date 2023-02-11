@@ -171,7 +171,7 @@ Completing the previous steps enables you to download and install Jenkins on AWS
 
 ```
 ``` powershell
-Check the status of the Jenkins service
+#Check the status of the Jenkins service
 
 [ec2-user ~]$ sudo systemctl status jenkins
 
