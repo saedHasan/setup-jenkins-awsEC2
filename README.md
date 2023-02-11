@@ -104,10 +104,9 @@ Step 5 : Installing and configuring Jenkins
 After lunching the EC2 instance , Jenkins can be installed properly.
 
 In this step you will deploy Jenkins on your EC2 instance by completing the following tasks:
-
-  a. Connecting to your Linux instance 
-  b. Downloading and installing Jenkins
-  c. Configuring Jenkins
+  a. Connecting to your Linux instance.
+  b. Downloading and installing Jenkins.
+  c. Configuring Jenkins.
 
 Step a : Connecting to your Linux instance
 
