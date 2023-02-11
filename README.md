@@ -86,11 +86,11 @@ To do so , follow the steps below :
 
 <img src="img/img5.png" />
 
-5. Scroll down and select the key pair you created in the creating a key pair section above or any existing key pair you intend to use.
+5. Scroll down and select the key pair you created in the creating a key pair section above or any existing key pair you intend to use:
 
-  a. Select Select an existing security group.
-  b. Select the WebSG security group that you created.
-  c. Select Launch Instance.
+a. Select Select an existing security group.
+b. Select the WebSG security group that you created.
+c. Select Launch Instance.
 
 <img src="img/img6.png" />
 
@@ -108,7 +108,7 @@ In this step you will deploy Jenkins on your EC2 instance by completing the foll
   b. Downloading and installing Jenkins.
   c. Configuring Jenkins.
 
-Step a : Connecting to your Linux instance
+Step a : Connecting to your Linux instance:
 
 There are four ways to connect to your EC2 ( EC2 Instance Connect , Session Manager , SSH Client and EC2 serial console ). 
 In this tutorial we will use EC2 Instance Connect : 
@@ -121,7 +121,7 @@ After connect :
 
 Note: If you want to connect using SSH , use the terminal if you are on MacOS , or PuTTY if you are on Windows. 
 
-Step b: Downloading and installing Jenkins
+Step b: Downloading and installing Jenkins:
 
 Completing the previous steps enables you to download and install Jenkins on AWS. To download and install Jenkins:
 
