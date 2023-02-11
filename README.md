@@ -1,4 +1,4 @@
-# setup-jenkins-with-awsEC2
+# setup-jenkins-awsEC2
 
 
 Jenkins on AWS
