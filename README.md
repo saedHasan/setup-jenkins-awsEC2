@@ -112,7 +112,7 @@ In this step you will deploy Jenkins on your EC2 instance by completing the foll
   - Downloading and installing Jenkins.
   - Configuring Jenkins.
 
-####  Connecting to your Linux instance:
+###  Connecting to your Linux instance:
 
 There are four ways to connect to your EC2 ( EC2 Instance Connect , Session Manager , SSH Client and EC2 serial console ). 
 In this tutorial we will use EC2 Instance Connect : 
@@ -123,40 +123,57 @@ After connect :
 
 <img src="img/img9.png" />
 
-Note: If you want to connect using SSH , use the terminal if you are on MacOS , or PuTTY if you are on Windows. 
+**Note** : If you want to connect using SSH , use the terminal if you are on MacOS , or PuTTY if you are on Windows. 
 
-## Step b: Downloading and installing Jenkins:
+### Downloading and installing Jenkins: 
 
 Completing the previous steps enables you to download and install Jenkins on AWS. To download and install Jenkins:
 
-Ensure that your software packages are up to date on your instance by uing the following command to perform a quick software update:
 
 
+``` powershell
+#Ensure that your software packages are up to date on your instance
 
-[ec2-user ~]$ sudo yum update –y
-Add the Jenkins repo using the following command:
+[ec2-user ~] $ sudo yum update –y
+```
+
+``` powershell
+#Add the Jenkins repo using the following command:
 
 [ec2-user ~]$ sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
-Import a key file from Jenkins-CI to enable installation from the package:
+```
+
+``` powershell
+#Import a key file from Jenkins-CI to enable installation from the package:
 
 [ec2-user ~]$ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
 [ec2-user ~]$ sudo yum upgrade
-Install Java:
+```
+``` powershell
+#Install Java:
 
 [ec2-user ~]$ sudo amazon-linux-extras install java-openjdk11 -y
-Install Jenkins:
+``` 
+``` powershell
+#Install Jenkins:
 
 [ec2-user ~]$ sudo yum install jenkins -y
-Enable the Jenkins service to start at boot:
+
+#Enable the Jenkins service to start at boot:
 
 [ec2-user ~]$ sudo systemctl enable jenkins
-Start Jenkins as a service:
+
+#Start Jenkins as a service:
 
 [ec2-user ~]$ sudo systemctl start jenkins
-You can check the status of the Jenkins service using the command:
+
+```
+``` powershell
+Check the status of the Jenkins service
 
 [ec2-user ~]$ sudo systemctl status jenkins
 
-
+```
 
